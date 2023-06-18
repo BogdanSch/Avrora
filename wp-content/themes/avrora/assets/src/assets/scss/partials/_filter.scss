@@ -1,0 +1,8 @@
+
+.filter {
+	flex-direction: column;
+
+	fieldset + fieldset {
+		margin-top: 55px;
+	}
+}

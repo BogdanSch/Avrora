@@ -1,0 +1,16 @@
+.legend {
+	padding: 5px;
+	margin-bottom: 5px;
+	display: block;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: $whiteColor;
+	background-color: $blueColor;
+
+	&--orange {
+		background-color: $lightOrangeColor;
+	}
+}

@@ -1,0 +1,106 @@
+.button {
+	width: fit-content;
+	padding: 14px 20px;
+	display: inline-block;
+	border-radius: 40px;
+	font-family: 'NotoSans';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	text-decoration: none;
+	outline: none;
+	border: 0;
+	transition: .3s;
+	color: $whiteColor;
+	background-color: $orangeColor;
+	cursor: pointer;
+
+	&-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 10px;
+	}
+
+	&-primary {
+		padding-left: 32px;
+		padding-right: 32px;
+		background-color: $blueColor;
+	}
+
+	&-inline {
+		font-family: 'SourceSansPro';
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		text-decoration: none;
+		transition: .3s;
+		color: $lightGray;
+	}
+
+	&-burger {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		z-index:2;
+		overflow: hidden;
+
+		 span {
+			width: 30px;
+			height: 2px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $darkColor;
+			transition: 0.2s ease-out;
+			will-change: transform;
+
+			&:nth-of-type(2) {
+				top: calc(50% - 6px);
+			}
+
+			&:nth-of-type(3) {
+				top: calc(50% + 6px);
+			}
+		}
+
+		&.active {
+			span {
+				background-color: $orangeColor;
+
+				&:nth-of-type(1) {
+					transform: translateX(100%);
+				}
+
+				&:nth-of-type(2) {
+					top: 50%;
+					transform: translate(-50%, 0%) rotate(45deg);
+				}
+
+				&:nth-of-type(3) {
+					top: 50%;
+					transform: translate(-50%, 0%) rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	&:hover {
+		filter: brightness(.8);
+	}
+
+	.icon {
+		&-arrow {
+			height: 12px;
+			width: 7px;
+		}
+	}
+}
+
+@media(max-width: 400px) {
+	.button {
+		width: 100%;
+		text-align: center;
+	}
+}

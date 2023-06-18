@@ -1,0 +1,177 @@
+.jobs {
+	padding-bottom: 150px;
+	font-family: 'SourceSansPro';
+
+	.wrapper {
+		column-gap: 40px;
+		justify-content: space-between;
+	}
+
+	.row {
+		margin-bottom: 30px;
+		justify-content: space-between;
+		align-items: center;
+
+		&.fw-400 {
+			h2 {
+				font-weight: 400;
+			}
+		}
+	}
+
+	.column {
+		&:nth-child(2) {
+			width: 100%;
+			max-width: 770px;
+		}
+	}
+
+	h2 {
+		font-family: 'SourceSansPro';
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 45px;
+		letter-spacing: -1px;
+	}
+
+	h6 {
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: 20px;
+		color: #9F9FB7;
+	}
+	
+	.job-item + .job-item {
+		margin-top: 30px;
+	}
+
+	.job-items + .row {
+		margin-top: 130px;
+	}
+
+	.button-inline:not(.button-toggle) {
+		margin-top: 45px;
+	}
+
+	.button-toggle {
+		display: none;
+
+		&.active {
+			color: $orangeColor;
+		}
+	}
+
+	&__filter {
+		label {
+			white-space: nowrap;
+		}
+	}
+}
+
+@media(max-width: 1200px) {
+	.jobs .job-items + .row {
+		margin-top: 60px;
+	}
+}
+
+@media(max-width: 768px) {
+	.jobs {
+		padding-bottom: 80px;
+
+		.wrapper {
+			flex-direction: column;
+			position: relative;
+		}
+
+		.row {
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		.column {
+			width: 100%;
+			
+			&:nth-child(1) {
+				position: absolute;
+				top: 40px;
+				right: 0;
+				z-index: 1;
+				transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+				transform: scale(0.75) translateY(-21px);
+				opacity: 0;
+				visibility: hidden;
+
+				&.active {
+					visibility: visible;
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+
+		&__filter {
+			padding: 30px 20px 40px;
+			column-gap: 20px;
+			flex-direction: row;
+			justify-content: space-between;
+			border-radius: 10px;
+			background-color: $gray300;
+
+			fieldset {
+				width: fit-content;
+
+				& + fieldset {
+					margin-top: 0;
+				}
+			}
+
+			label {
+				white-space: normal;
+			}
+		}
+
+		.button-inline:not(.button-toggle) {
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		.button-toggle {
+			display: block;
+		}
+
+		.job-items + .row {
+			margin-top: 40px;
+		}
+		
+		h2 {
+			font-size: 28px;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.jobs {
+		&__filter {
+			flex-wrap: wrap;
+
+			fieldset {
+				width: calc(50% - 10px);
+				margin-bottom: 55px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 420px) {
+	.jobs {
+		&__filter {
+			fieldset {
+				width: 100%;
+			}
+		}
+	}
+}
