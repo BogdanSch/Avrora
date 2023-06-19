@@ -1,0 +1,374 @@
+@media only screen and (max-width: 1024px) {
+    body{
+        min-width: 320px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .wrap{
+        width: 94%;
+    }
+    .welcome-box .wrap .content {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        padding: 25px 0 0;
+    }
+    .welcome-box .wrap .color-links {
+        float: none;
+        margin: 0 auto;
+        width: 468px;
+        clear: both;
+        display: block;
+    }
+    .content .products-box{
+        width: 100%;
+        text-align: center;
+    }
+    .content .products-box .box p .text {
+        width: 70%;
+    }
+    .content .products-box .box{
+        float: none;
+        margin: 15px 7px 18px 8px;
+        display: inline-block;
+        text-align: left;
+    }
+    .content h2 {
+        padding: 7px 5% 36px;
+    }
+    .content .security-box .box{
+        margin-bottom: 25px;
+    }
+    .big-slide-show{
+        width: 100%;
+    }
+    .big-slide-show .main-wrap{
+        width: 74%;
+    }
+    .big-slide-show .wrap-slides{
+        width: 24%;
+    }
+    .big-slide-show .wrap-slides .slide .img-box,
+    .big-slide-show .main-wrap .main-img{
+        background-size: cover;
+    }
+    .content .right h3{
+        text-align: left;
+    }
+    .content .show-room {
+        padding: 0 0 25px;
+        width: 100%;
+    }
+    .content .right {
+        clear: left;
+        float: left;
+        margin: 0;
+        padding-bottom: 58px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .content .security-box .box{
+        height: auto !important;
+        vertical-align: middle;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .header .main-menu ul {
+        width: 100%;
+    }
+    .contacts-box .wpcf7-form  {
+        clear: left;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .footer .bottom{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .footer .bottom .wrap .box{
+        text-align: left;
+        display: inline-block;
+        margin: 0 17px 20px;
+        float: none;
+    }
+    .header .wrap h1 {
+        position: relative;
+        padding: 0px 0 0;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .header .wrap .logo {
+        float: left;
+        left: 50%;
+        margin: 13px 0 0 -85px;
+        position: relative;
+        text-align: center;
+        width: 210px;
+    }
+    .header .wrap .slide-show {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .searchform #s{
+        width: 135px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .welcome-box .wrap .content {
+        padding-bottom: 25px;
+        width: 100%;
+    }
+    .welcome-box .wrap .content h1{
+        clear: both;
+        padding: 30px 0 20px;
+    }
+    .footer .contact-box .wrap h5,
+    .footer .contact-box .wrap h4{
+        display: block;
+        line-height: normal;
+    }
+    .big-slide-show .main-wrap{
+        width: 100%;
+    }
+    .big-slide-show .wrap-slides{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .big-slide-show .wrap-slides .slide {
+        margin: 0 2% 0 0;
+        width: 31%;
+    }
+    .big-slide-show .wrap-slides .slide.last{
+        margin: 0;
+    }
+    .big-slide-show{
+        height: 530px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .contacts-box .left, .contacts-box .rights {
+        width: 100%;
+    }
+    .widget-cont {
+        float: left;
+        margin-bottom: 30px;
+        margin-right: 5%;
+        width: 40%;
+    }
+    .contacts-box form{
+        width: 100%;
+    }
+    .big-slide-show .main-wrap{
+        height: 300px;
+    }
+    .big-slide-show {
+        height: 435px;
+    }
+
+    .header .wrap .slide-show{
+        display: none;
+    }
+
+    .header .wrap h1{
+        text-align: center;
+    }
+
+    .header .wrap .logo {
+        left: 50%;
+        margin: 10px 0 0 -80px;
+    }
+
+    .search-field {
+        float: right;
+        margin-left: 0;
+        margin-top: 12px;
+        width: 45%;
+    }
+
+    .search-field #searchform{
+        float: right;
+    }
+
+    .contact-us {
+        color: #fff;
+        float: left;
+        margin-top: 20px;
+        width: 50%;
+        height: 34px;
+    }
+
+    .social{
+        height: 100px;
+    }
+
+    .fixed.header .wrap .logo{
+        display: none;
+    }
+
+    .header .main-menu, .header .menu{
+        float: left;
+    }
+
+}
+@media only screen and (max-width: 620px) {
+    .contacts-box .left {
+        width: 100%;
+    }
+    .contacts-box .info{
+        clear: left;
+        margin: 11px 0 0 0;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .footer .bottom .wrap .box.one {
+        width: 280px;
+    }
+    .content .products-box .box{
+        width: 100%;
+        margin: 15px 0 18px 0;
+    }
+    .content .products-box .box p .text {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .welcome-box .wrap .color-links{
+        width: 234px;
+    }
+    .contacts-box .wpcf7-form  {
+        width: 100%;
+    }
+    .contacts-box .wpcf7-form  label input,
+    .contacts-box .wpcf7-form  label textarea{
+        width: 70%;
+    }
+    .contacts-box .wpcf7-form  .submit {
+        position: relative;
+        margin: 12px -124px 0 0;
+        right: 71%;
+    }
+
+    .big-slide-show .main-wrap {
+        height: 250px;
+    }
+    .big-slide-show .wrap-slides .slide{
+        height: 75px;
+    }
+    .big-slide-show{
+        height: 335px;
+    }
+    .mobile-menu{
+        border-bottom: 0;
+    }
+    .right-part{ width: 100%;}
+    .left-part{ width: 100%;}
+    .header .wrap .logo {
+        left: 0%;
+        margin: 10px 0 0 0px;
+    }
+
+    .header-wrap{
+        margin-bottom: 0;
+    }
+
+    .home-about-section h1.title{
+        padding-top: 0 !important;
+        margin-top: -10px;
+    }
+
+    .news .post25{
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .search-field {
+        float: right;
+        margin-left: 0;
+        margin-top: 12px;
+        width: 62%;
+    }
+
+    .contact-us{
+        width: 100%;
+    }
+
+    .contact-us{
+        height: 25px;
+    }
+
+    .contact-us li{
+        margin-bottom: 7px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    .widget-cont {
+        float: left;
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 95%;
+    }
+    .contacts-box form label textarea, .contacts-box form label input{
+        width: 70%;
+    }
+    .box-news {
+        float: left;
+        margin-right: 5%;
+        width: 100%;
+    }
+    .welcome-box .wrap .content img{
+        margin: 0;
+    }
+
+
+    .news.infos .box-news{
+        border-right: 0 none;
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 80%;
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 15px;
+    }
+
+    .news .post25 {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+
+    .search-field, .search-field form{
+        display: none;
+    }
+
+    .soc{
+        float: left;
+    }
+
+    .soc-cover{
+        float: left;
+        left: 50%;
+        margin-left: -85px;
+        padding-top: 0;
+        position: relative;
+    }
+
+    .contact-us li {
+        float: left;
+        margin-right: 5%;
+        width: 38%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    span.wpcf7-form-control-wrap{
+        float: none;
+    }
+}
