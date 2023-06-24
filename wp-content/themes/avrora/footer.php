@@ -5,33 +5,11 @@
 				<h6>
 					<?php _e(get_bloginfo('name')); ?>
 				</h6>
-				<h2><?php _e(esc_html(get_theme_mod('avrora_copyright_text', 'Default Copyright Text'))); ?></h2>
+				<h2>
+					<?php _e(esc_html(get_theme_mod('avrora_copyright_text', 'Default Copyright Text'))); ?>
+				</h2>
 			</div>
 			<?php get_sidebar("footer"); ?>
-			<!-- <div class="column flex">
-				<h6>Employer</h6>
-				<ul>
-					<li><a href="#">Post a Job</a></li>
-					<li><a href="#">Search Resumes</a></li>
-					<li><a href="#">Sign in</a></li>
-				</ul>
-			</div>
-			<div class="column flex">
-				<h6>Job Seeker</h6>
-				<ul>
-					<li><a href="#">Find Jobs</a></li>
-					<li><a href="#">Create Resume</a></li>
-					<li><a href="#">Sign in</a></li>
-				</ul>
-			</div>
-			<div class="column flex">
-				<h6>Get in Touch</h6>
-				<ul>
-					<li><a href="#">Linkedin</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>
-				</ul>
-			</div> -->
 		</div>
 	</div>
 </footer>
@@ -42,7 +20,6 @@
 			<h2>Apply now!</h2>
 			<p>Elementum magna ac tempor, facilisis tristique mauris. Et penatibus sit sed in ante in ultrices.
 				Senectus aliquam dictum eleifend mi pharetra morbi.</p>
-
 			<form action="" class="typical-form flex">
 				<fieldset class="row flex">
 					<input type="text" name="firstName" placeholder="First Name">

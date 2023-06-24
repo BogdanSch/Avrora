@@ -34,12 +34,6 @@ $site_url = get_site_url();
 						</a>
 					<?php } ?>
 					<nav class="flex">
-						<!-- <ul class="header-menu flex">
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Companies</a></li>
-							<li><a href="#">Post a Job</a></li>
-						</ul> -->
 						<?php
 						if (has_nav_menu('primary')) {
 							wp_nav_menu(
@@ -54,11 +48,12 @@ $site_url = get_site_url();
 							);
 						}
 						?>
-
-						<ul class="header-autorize flex">
-							<li><a href="#">Sign in</a></li>
-							<li><a href="#">Sign up</a></li>
-						</ul>
+						<?php if (!is_user_logged_in()) { ?>
+							<ul class="header-autorize flex">
+								<li><a href="<?php _e(wp_login_url()); ?>">Sign in</a></li>
+								<li><a href="<?php _e(wp_registration_url()); ?>">Sign up</a></li>
+							</ul>
+						<?php } ?>
 					</nav>
 					<a href="#" class="button-burger">
 						<span></span>
