@@ -6,9 +6,9 @@ function avrora_customize_header_register($wp_customize)
         [
             'title' => __('Hero Section', 'avrora'),
             'priority' => 30,
-            'active_callback' => '__return_true',
+            // 'active_callback' => '__return_true',
             'description' => __('Edit the Hero Section content', 'avrora'),
-            'add_edit_link' => true,
+            // 'add_edit_link' => true,
         ]
     );
 
