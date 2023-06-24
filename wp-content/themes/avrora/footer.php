@@ -2,10 +2,13 @@
 	<div class="container">
 		<div class="wrapper flex">
 			<div class="column flex">
-				<h6>BoonJobs</h6>
-				<h2>Test tasks for the WordPress developer</h2>
+				<h6>
+					<?php _e(get_bloginfo('name')); ?>
+				</h6>
+				<h2><?php _e(esc_html(get_theme_mod('avrora_copyright_text', 'Default Copyright Text'))); ?></h2>
 			</div>
-			<div class="column flex">
+			<?php get_sidebar("footer"); ?>
+			<!-- <div class="column flex">
 				<h6>Employer</h6>
 				<ul>
 					<li><a href="#">Post a Job</a></li>
@@ -28,7 +31,7 @@
 					<li><a href="#">Facebook</a></li>
 					<li><a href="#">Instagram</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </footer>

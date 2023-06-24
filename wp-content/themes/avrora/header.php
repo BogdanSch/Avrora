@@ -73,13 +73,19 @@ $site_url = get_site_url();
 				<div class="container">
 					<div class="wrapper flex">
 						<div class="column flex">
-							<h1>Find the employee you need right now</h1>
-							<p>Elementum magna ac tempor, facilisis tristique mauris. Et penatibus sit sed in ante in
-								ultrices. Senectus aliquam dictum eleifend mi pharetra morbi.</p>
-							<a href="#" class="button button-primary">Post vacancy</a>
+							<h1>
+								<?php echo get_theme_mod('hero_title', 'Find the employee you need right now'); ?>
+							</h1>
+							<p>
+								<?php echo get_theme_mod('hero_description', 'Elementum magna ac tempor, facilisis tristique mauris. Et penatibus sit sed in ante in ultrices. Senectus aliquam dictum eleifend mi pharetra morbi.'); ?>
+							</p>
+							<a href="<?php echo esc_url(get_theme_mod('hero_button_link', '#')); ?>"
+								class="button button-primary">
+								<?php echo esc_html(get_theme_mod('hero_button_text', 'Post vacancy')); ?>
+							</a>
 						</div>
 						<div class="column flex">
-							<img src="<?php bloginfo('template_directory') ?>/assets/dist/assets/images/svg/hero-img.svg"
+							<img src="<?php echo esc_url(get_theme_mod('hero_image', get_template_directory_uri() . '/assets/dist/assets/images/svg/hero-img.svg')); ?>"
 								alt="hero-img">
 						</div>
 					</div>
