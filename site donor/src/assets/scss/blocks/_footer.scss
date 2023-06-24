@@ -4,10 +4,6 @@
 	font-size: 16px;
 	line-height: 20px;
 
-	&-column{
-		flex-basis: 100%;
-	}
-
 	.wrapper {
 		justify-content: space-between;
 		column-gap: 20px;
@@ -15,6 +11,10 @@
 
 	.column {
 		flex-direction: column;
+	}
+
+	.footer-column{
+		flex-basis: 100%;
 	}
 
 	h6 {

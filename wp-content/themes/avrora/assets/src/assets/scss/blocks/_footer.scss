@@ -13,6 +13,10 @@
 		flex-direction: column;
 	}
 
+	.footer-column{
+		flex-basis: 100%;
+	}
+
 	h6 {
 		margin-bottom: 30px;
 		color: $lightGray;
