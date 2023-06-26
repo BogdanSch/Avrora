@@ -97,30 +97,6 @@
 		}
 	}
 }
-.wp-block-button__link {
-	width: fit-content;
-	padding: 14px 20px;
-	display: inline-block;
-	border-radius: 40px;
-	font-family: 'NotoSans';
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.5;
-	text-decoration: none;
-	outline: none;
-	border: 0;
-	transition: .3s;
-	color: $whiteColor;
-	background-color: $orangeColor;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	column-gap: 10px;
-	padding-left: 32px;
-	padding-right: 32px;
-	background-color: $blueColor;
-}
 
 @media(max-width: 400px) {
 	.button {

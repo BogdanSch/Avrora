@@ -805,42 +805,6 @@ img {
   width: 7px;
 }
 
-.wp-block-button__link {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 14px 20px;
-  display: inline-block;
-  border-radius: 40px;
-  font-family: "NotoSans";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  text-decoration: none;
-  outline: none;
-  border: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #ffffff;
-  background-color: #FD5631;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  background-color: #0601FC;
-}
-
 @media (max-width: 400px) {
   .button {
     width: 100%;
@@ -2043,4 +2007,23 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.content {
+  padding: 25px 0 145px;
+  font-size: 16px;
+  color: #666276;
+}
+.content h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: -1px;
+  color: #0F1137;
+}
+.content p {
+  color: #666276;
+}
+.content p + p {
+  margin-top: 24px;
 }
