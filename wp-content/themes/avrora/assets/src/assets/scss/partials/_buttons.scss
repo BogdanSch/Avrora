@@ -42,10 +42,10 @@
 		width: 30px;
 		height: 30px;
 		position: relative;
-		z-index:2;
+		z-index: 2;
 		overflow: hidden;
 
-		 span {
+		span {
 			width: 30px;
 			height: 2px;
 			position: absolute;
@@ -96,6 +96,30 @@
 			width: 7px;
 		}
 	}
+}
+.wp-block-button__link {
+	width: fit-content;
+	padding: 14px 20px;
+	display: inline-block;
+	border-radius: 40px;
+	font-family: 'NotoSans';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	text-decoration: none;
+	outline: none;
+	border: 0;
+	transition: .3s;
+	color: $whiteColor;
+	background-color: $orangeColor;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	padding-left: 32px;
+	padding-right: 32px;
+	background-color: $blueColor;
 }
 
 @media(max-width: 400px) {
