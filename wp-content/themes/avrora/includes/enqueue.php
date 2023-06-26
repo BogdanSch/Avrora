@@ -12,11 +12,11 @@ function avrora_enqueue_scripts()
     //Styles
     wp_register_style("avrora_main_css", $url."/assets/dist/assets/css/style.css", [], $version);
     //Scripts
+    wp_enqueue_script('jquery');
     wp_register_script("avrora_main_js", $url."/assets/dist/assets/js/script.js", ['jquery'], $version, true);
     wp_register_script("avrora_nice_select", $url."/assets/dist/assets/js/nice-select.min.js", ['jquery'], $version, true);
     wp_register_script("avrora_magnific_popup", $url."/assets/dist/assets/js/magnific-popup.min.js", ['jquery'], $version, true);
     //Apply
-    wp_enqueue_script("jquery");
     wp_enqueue_style("avrora_notosans_bold");
     wp_enqueue_style("avrora_notosans_regular");
     wp_enqueue_style("avrora_sourcesanspro_bold");

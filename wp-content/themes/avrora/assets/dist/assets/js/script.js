@@ -1,15 +1,15 @@
-$(document).ready(() => {
-	$('select').niceSelect();
+jQuery(document).ready(() => {
+	jQuery('select').niceSelect();
 
-	$('.button-popup').magnificPopup({
+	jQuery('.button-popup').magnificPopup({
 		mainClass: 'mfp-fade',
 		fixedContentPos: true,
 		callbacks: {
 			open: () => {
-				$('.main').addClass('scroll-lock');
+				jQuery('.main').addClass('scroll-lock');
 			},
 			close: () => {
-				$('.main').removeClass('scroll-lock');
+				jQuery('.main').removeClass('scroll-lock');
 			}
 		}
 	});

@@ -28,11 +28,17 @@ $site_url = get_site_url();
 		<header class="header">
 			<div class="container">
 				<div class="wrapper flex">
-					<?php if (has_custom_logo()) { ?>
-						<a href="<?php _e($site_url) ?>" class="logo">
-							<?php the_custom_logo(); ?>
-						</a>
-					<?php } ?>
+					<?php if (has_custom_logo()) {
+						$custom_logo_id = get_theme_mod('custom_logo');
+						$custom_logo_data = wp_get_attachment_image_src($custom_logo_id, 'full');
+						if ($custom_logo_data) {
+							$custom_logo_url = $custom_logo_data[0];
+							?>
+							<a href="<?php echo esc_url($site_url); ?>" class="logo">
+								<img src="<?php echo esc_url($custom_logo_url); ?>" alt="Logo">
+							</a>
+						<?php }
+					} ?>
 					<nav class="flex">
 						<?php
 						if (has_nav_menu('primary')) {
