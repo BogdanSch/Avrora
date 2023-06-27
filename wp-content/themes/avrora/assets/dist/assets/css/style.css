@@ -1377,6 +1377,11 @@ img {
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
+.footer .wrapper.flex {
+  -webkit-column-gap: 131px;
+     -moz-column-gap: 131px;
+          column-gap: 131px;
+}
 .footer .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
